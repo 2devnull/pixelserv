@@ -1,5 +1,5 @@
 DISTNAME   = pixelserv
-SRCS       = $(DISTNAME).c
+SRCS       = $(DISTNAME).c util.c socket_handler.c -L/usr/lib/syslinux/com32/include -lrt
 
 OPTS      := -O2 -DDO_COUNT -DTEXT_REPLY -DREAD_FILE -DREAD_GIF -DNULLSERV_REPLIES -DSSL_RESP
 TEST_OPTS := -DTEST -DVERBOSE
